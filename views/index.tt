@@ -1,0 +1,10 @@
+<div id="toc">
+    <h3>Table of Contents</h3>
+    <ul id="contents">
+    <% WHILE (recipe = query.next) %>
+        <li><a href='/recipes/<% recipe.id %>'><% recipe.name %></a></li>
+    <% END %>
+    </ul>
+
+    <a href="/submit" id="new-recipe-link">Submit new Recipe</a>
+</div>

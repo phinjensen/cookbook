@@ -1,0 +1,22 @@
+<div id="submit-page">
+    <form action="/submit" method="post">
+        <div id="submit-form">
+            <div class="input">
+                <input type="text" name="name" placeholder="Name">
+            </div>
+            <span class="seperator"></span>
+            <div class="input">
+                <input type="text" name="source" placeholder="Source">
+            </div>
+            <span class="seperator"></span>
+            <div class="input">
+                <textarea name="ingredients" rows="15" cols="75" placeholder="Ingredients"></textarea>
+            </div>
+            <span class="seperator"></span>
+            <div class="input">
+                <textarea name="directions" rows="15" cols="75" placeholder="Directions"></textarea>
+            </div>
+        </div>
+        <input type="submit" value="Submit Recipe" id="submit-button">
+    </form>
+</div>

@@ -1,0 +1,17 @@
+<div id="recipe">
+    <span id="recipe-title"><h3 style="display: inline-block"><% recipe.name %></h3><% IF recipe.source %> from <i><% recipe.source %></i></span><% END %>
+    <% IF ingredients.size %>
+    <h4>Ingredients</h4>
+    <ul id="ingredients">
+    <% FOREACH ingredient = ingredients %>
+        <li><% ingredient %></li>
+    <% END %>
+    </ul>
+    <% END %>
+    <% IF directions.size %>
+    <h4>Directions</h4>
+    <% FOREACH direction = directions %>
+        <p><% direction %></p>
+    <% END %>
+    <% END %>
+</div>
