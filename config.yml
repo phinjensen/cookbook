@@ -25,4 +25,10 @@ template: "template_toolkit"
 #   template_toolkit:
 #     start_tag: '[%'
 #     end_tag:   '%]'
+session: Simple
 
+plugins:
+  ValidateTiny:
+    rules_dir: validation
+    error_prefix: err_
+    is_full: 0

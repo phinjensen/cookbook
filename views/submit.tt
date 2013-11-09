@@ -4,15 +4,15 @@
             <div class="input">
                 <input type="text" name="name" placeholder="Name">
             </div>
-            <span class="seperator"></span>
+            <span class="separator"></span>
             <div class="input">
                 <input type="text" name="source" placeholder="Source">
             </div>
-            <span class="seperator"></span>
+            <span class="separator"></span>
             <div class="input">
                 <textarea name="ingredients" rows="15" cols="75" placeholder="Ingredients"></textarea>
             </div>
-            <span class="seperator"></span>
+            <span class="separator"></span>
             <div class="input">
                 <textarea name="directions" rows="15" cols="75" placeholder="Directions"></textarea>
             </div>

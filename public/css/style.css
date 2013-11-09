@@ -13,7 +13,7 @@ input, textarea {
     padding: 20px;
     font-family: "PT Sans";
     font-size: 13px;
-    width: 500px;
+    width: 700px;
 }
 
 input:focus, textarea:focus {
@@ -29,7 +29,7 @@ body {
 
     font-size: 13px;
     font-family: "PT Sans";
-    width: 560px;
+    width: 760px;
     margin: auto;
 }
 
@@ -106,7 +106,7 @@ p {
 
 #submit-form {
     margin: auto;
-    width: 540px;
+    width: 740px;
     background: white;
     border-radius: 4px;
     padding: 5px;
@@ -131,10 +131,10 @@ p {
     text-align: center;
 }
 
-.seperator {
+.separator {
     float: left;
     border-bottom: 1px solid rgba(169, 169, 169, 0.8);
     margin: 0 20px;
-    width: 500px;
+    width: 700px;
     height: 1px;
 }

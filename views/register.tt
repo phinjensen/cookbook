@@ -1,0 +1,28 @@
+<div id="register">
+    <% IF success %>
+    <p>Account creation successful! Click <a href="/login">here</a> to log in.</p>
+    <% ELSIF error %>
+    <p style="color: red">Error creating account!</p>
+    <% ELSE %>
+    <form action="/register" method="post">
+        <div id="submit-form">
+            <div class="input">
+                <input type="text" name="user" placeholder="Your username">
+            </div>
+            <span class="separator"></span>
+            <div class="input">
+                <input type="text" name="email" placeholder="Your email address">
+            </div>
+            <span class="separator"></span>
+            <div class="input">
+                <input type="password" name="pass" placeholder="Your password">
+            </div>
+            <span class="separator"></span>
+            <div class="input">
+                <input type="password" name="passconf" placeholder="Your password again">
+            </div>
+        </div>
+        <input type="submit" value="Create account" id="submit-button">
+    </form>
+    <% END %>
+</div>

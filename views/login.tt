@@ -1,0 +1,14 @@
+<div id="login">
+    <form action="/login" method="post">
+        <div id="submit-form">
+            <div class="input">
+                <input type="text" name="user" placeholder="Username">
+            </div>
+            <span class="separator"></span>
+            <div class="input">
+                <input type="password" name="pass" placeholder="Password">
+            </div>
+        </div>
+        <input type="submit" value="Log in" id="submit-button">
+    </form>
+</div>

@@ -16,6 +16,9 @@
 <body>
 <div id="header">
     <h1><a href='/'>Jensen Recipe Collection</a></h1>
+    <% IF session.logged_in %>
+        <p>yo dawg</p>
+    <% END %>
 </div>
 <% content %>
 </body>
