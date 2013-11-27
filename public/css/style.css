@@ -29,7 +29,6 @@ body {
 
     font-size: 13px;
     font-family: "PT Sans";
-    width: 760px;
     margin: auto;
 }
 
@@ -73,6 +72,33 @@ a:hover {
 
 p {
     text-align: justify;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+#header {
+    width: 760px;
+    margin: 0 auto;
+}
+
+.content {
+    width: 760px;
+    margin: 0 auto;
+}
+
+#account-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #D6BF94;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 5px;
 }
 
 /* Table of Contents */

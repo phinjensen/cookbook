@@ -1,4 +1,5 @@
 <div id="submit-page">
+    <% IF session.logged_in %>
     <form action="/submit" method="post">
         <div id="submit-form">
             <div class="input">
@@ -19,4 +20,7 @@
         </div>
         <input type="submit" value="Submit Recipe" id="submit-button">
     </form>
+    <% ELSE %>
+    <p> You must be <a href="/login">logged in</a> to access this page!</p>
+    <% END %>
 </div>

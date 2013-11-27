@@ -1,4 +1,8 @@
 <div id="login">
+    <% IF error %>
+    <p style="color: red">Error!</p>
+    <p><% error %>
+    <% ELSE %>
     <form action="/login" method="post">
         <div id="submit-form">
             <div class="input">
@@ -11,4 +15,5 @@
         </div>
         <input type="submit" value="Log in" id="submit-button">
     </form>
+    <% END %>
 </div>

@@ -2,7 +2,8 @@
     <% IF success %>
     <p>Account creation successful! Click <a href="/login">here</a> to log in.</p>
     <% ELSIF error %>
-    <p style="color: red">Error creating account!</p>
+    <p style="color: red">Error!</p>
+    <p><% error %></p>
     <% ELSE %>
     <form action="/register" method="post">
         <div id="submit-form">
