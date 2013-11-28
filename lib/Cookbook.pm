@@ -25,6 +25,11 @@ get '/recipes/:id' => sub {
     };
 };
 
+get '/recipes/:id/edit' => sub {
+    my $recipe = schema->resultset('Recipe')->find(param('id'));
+    template 'edit';
+};
+
 get '/submit' => sub {
     template 'submit';
 };

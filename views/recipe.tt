@@ -1,5 +1,9 @@
 <div id="recipe">
-    <span id="recipe-title"><h3 style="display: inline-block"><% recipe.name %></h3><% IF recipe.source %> from <i><% recipe.source %></i></span><% END %>
+    <span id="recipe-title">
+        <h3 style="display: inline-block"><% recipe.name %></h3>
+        <% IF recipe.source %> from <i><% recipe.source %></i><% END %>
+        <% IF session.logged_in %> &mdash; <a href="<% request.uri %>/edit">Edit</a><% END %>
+    </span>
     <% IF ingredients.size %>
     <h4>Ingredients</h4>
     <ul id="ingredients">
