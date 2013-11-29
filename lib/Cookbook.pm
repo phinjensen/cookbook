@@ -30,6 +30,16 @@ get '/recipes/:id/edit' => sub {
     template 'edit', { map { $_ => $recipe->$_ } qw( name source ingredients directions ) }
 };
 
+post '/recipes/:id/edit' => sub {
+    my $recipe = schema->resultset('Recipe')->find(param('id'));
+    $recipe->name(params->{name});
+    $recipe->source(params->{source});
+    $recipe->ingredients(params->{ingredients});
+    $recipe->directions(params->{directions});
+    $recipe->update;
+    redirect '/recipes/'.param('id');
+};
+
 get '/submit' => sub {
     template 'submit';
 };
