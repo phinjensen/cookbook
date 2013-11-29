@@ -109,12 +109,16 @@ p {
     font-size: 1em;
 }
 
-#contents li a {
+#contents li {
+    position: relative;
+}
+
+.recipe-link {
     padding: 3px;
     display: block;
 }
 
-#contents li a:hover {
+.recipe-link:hover {
     background-color: #A68572;
     color: #591e23;
 }
@@ -126,6 +130,21 @@ p {
 #new-recipe-link {
     display: block;
     margin: 20px 0;
+}
+
+.edit-icons {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+.edit-icon:hover {
+    color: #591e23;
+    font-size: 1.5em;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
 }
 
 /* Submit page */

@@ -27,7 +27,7 @@ get '/recipes/:id' => sub {
 
 get '/recipes/:id/edit' => sub {
     my $recipe = schema->resultset('Recipe')->find(param('id'));
-    template 'edit', { map { $_ => $recipe->$_ } qw( name source ingredients directions ) }
+    template 'edit', { map { $_ => $recipe->$_ } qw( name source ingredients directions ) };
 };
 
 post '/recipes/:id/edit' => sub {

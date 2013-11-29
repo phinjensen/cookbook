@@ -2,7 +2,12 @@
     <h3>Table of Contents</h3>
     <ul id="contents">
     <% WHILE (recipe = query.next) %>
-        <li><a href='/recipes/<% recipe.id %>'><% recipe.name %></a></li>
+        <li>
+            <a href="/recipes/<% recipe.id %>" class="recipe-link"><% recipe.name %></a>
+            <span class="edit-icons">
+                <a href="/recipes/<% recipe.id %>/edit"><i class="edit-icon fa fa-edit"></i></a>
+            </span>
+        </li>
     <% END %>
     </ul>
 
