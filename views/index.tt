@@ -6,6 +6,7 @@
             <a href="/recipes/<% recipe.id %>" class="recipe-link"><% recipe.name %></a>
             <span class="edit-icons">
                 <a href="/recipes/<% recipe.id %>/edit"><i class="edit-icon fa fa-edit"></i></a>
+                <a href="/recipes/<% recipe.id %>/delete"><i class="edit-icon fa fa-trash-o"></i></a>
             </span>
         </li>
     <% END %>

@@ -40,6 +40,14 @@ post '/recipes/:id/edit' => sub {
     redirect '/recipes/'.param('id');
 };
 
+get '/recipes/:id/delete' => sub {
+    my $recipe = schema->resultset('Recipe')->find(param('id'));
+    template 'confirm', {
+        header => "Deleting recipe",
+        message => 'Are you sure you want to delete the recipe "' . $recipe->name . '"?'
+    };
+};
+
 get '/submit' => sub {
     template 'submit';
 };

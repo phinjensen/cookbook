@@ -1,0 +1,10 @@
+<div id="confirm">
+    <h3><% header %></h3>
+    <p><% message %></p>
+    <form action="" method="post">
+        <div>
+            <input type="hidden" name="post" value="yes">
+            <input type="submit" value="Yes, I'm sure" id="submit-button">
+        </div>
+    </form>
+</div>
