@@ -17,7 +17,7 @@
         <div class="wrapper">
             <span id="account-links">
             <% IF session.logged_in %>
-                <a href="/logout">Log Out</a> &#151; <a href="/account-settings">Account Settings</a>
+                <a href="/logout">Log Out</a>
             <% ELSE %>
                 <a href="/login">Log In</a> &#151; <a href="/register">Register</a>
             <% END %>
